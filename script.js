@@ -23,4 +23,7 @@ const playRound = (pSelection, cSelection) => {
   }
 };
 
-console.log(playRound("rock", getComputerChoice()));
+for (let i = 0; i < 5; i++) {
+  let player = prompt("enter your answer (rock, paper, or scissor)");
+  console.log(playRound(player, getComputerChoice()));
+}
